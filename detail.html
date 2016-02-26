@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/detail.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<div class="container">
+  <h2>Полная статья</h2>
+  <p>Динамическое добавление списка</p>
+    <div class="form-group">
+      <label for="sel1">Выберите статью:</label>
+      <select class="form-control" id="sel">
+        <option value=""></option>
+        <option value="1">Первая строка</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="add">Добавить в список</label>
+      <input class="form-control" id="add">
+    </div>
+    <button type="button" onClick="addOpt()">Добавить список</button>
+    <button type="button" onClick="delOpt()">Удалить выбранный элемент</button>
+</div>
+<script src="js/detail.js"></script>
+</body>
+</html>

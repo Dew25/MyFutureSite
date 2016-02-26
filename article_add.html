@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/article_add.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+
+</head>
+<body>
+
+<div class="container">
+  <h2>Администратор</h2><br>
+  Сегодня: <span id="dt"></span>
+  <form role="form" action="formlogin.html" onsubmit="return valid()" >
+    <div class="form-group">
+      <label for="title">Заголовок:</label>
+      <input type="text" class="form-control" id="title" placeholder="Заголовок статьи">
+      <p id="error-title" class='error'>поле обязательно для заполнения</p>
+    </div>
+    <div class="form-group">
+      <label for="article">Текст статьи:</label>
+      <textarea class="form-control" rows="9" id="article" placeholder="Текст статьи"></textarea>
+      <p id="error-article" class='error'>поле обязательно для заполнения</p>
+    </div>
+    <div class="form-group">
+      <label for="author">Автор:</label>
+      <input type="text" class="form-control" id="author" placeholder="Автор">
+      <p id="error-author" class='error'>поле обязательно для заполнения</p>
+    </div>
+    <div class="form-group">
+      <label for="date-now">Дата:</label>
+      <input type="text" class="form-control" id="date-now" placeholder="Дата написанияи/редактирования">
+    </div>
+    <div class="form-group">
+      <label for="gender">Пол:</label>
+      <select class="form-control" id="gender" placeholder="Выберите Ваш пол"></select>
+    </div>
+    <button type="reset" class="btn btn-default">Очистить</button>
+    <button type="submit" class="btn btn-default">Добавить</button>
+  </form>
+  <p><div id="count"></div></p>
+  <p><div id="countAttr"></div></p>
+</div>
+<script src="js/article_add.js"></script>
+</body>
+</html>

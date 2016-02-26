@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Добавить новость</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/addnews.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/addnews.js"></script>
+</head>
+<body>
+  <div class="container">
+    <H2>Добавляем новость:</H2><br>
+    <form role="form" method="POST" action="localhost" onsubmit="return valid()">
+      <div class="form-group">
+        <label for="title">Заголовок:</label>
+        <input type="text" class="form-control" id="title" name="_title">
+      </div>
+      <div class="form-group">
+        <label for="content">Текст:</label>
+        <textarea class="form-control" id="content" name="content" rows="10"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="author">Автор:</label>
+        <input type="text" class="form-control" id="author" name="_author">
+      </div>
+      <div class="form-group">
+        <label for="dt">Дата:</label><div id="date"></div>
+        <input type="text" class="form-control" id="dt" name="_date">
+      </div><br>
+      <button type="reset" class="btn btn-default">Reset</button>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

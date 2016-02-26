@@ -1,0 +1,31 @@
+
+.content{
+	width:500px;
+}
+.table{
+	width: 100%;
+	border: 1px solid #838b75;
+	margin-top: 50px;
+}
+
+.title-text,
+.author-text{
+	width:150px;
+	
+
+}
+
+.title1,.date1,
+{
+	width:50px;
+	padding: 5px;
+	text-align: right;
+
+}
+.date, .author{
+	width:100px;
+
+}
+.article{
+
+}

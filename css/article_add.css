@@ -1,0 +1,23 @@
+.container{
+	width: 500px;
+	margin: 50px auto;
+}
+#title{
+	width: 300px;
+}
+#author, #date-now{
+	width:250px;
+}
+#gender {
+	width:250px;
+}
+.invalid{
+	border: 4px solid #fc9870;
+}
+.error-on{
+	display: "block";
+	color: red;
+}
+.error{
+	display: none;
+}
