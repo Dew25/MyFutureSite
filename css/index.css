@@ -3,6 +3,7 @@
  
 	width: 500px;
 	margin: 0 auto;
+  border:1px solid #000;
 
 }
 header{
@@ -18,6 +19,9 @@ header{
   margin: 0 auto;
 	background-color: #f9ffff;
 	border: 1px solid #000f;
+}
+.trTable{
+  cursor: pointer;
 }
 /* --- calendar -----*/
 #calendar{
