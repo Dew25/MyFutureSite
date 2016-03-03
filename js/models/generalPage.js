@@ -1,5 +1,11 @@
 'use strict';
-//функция создания таблицы с данными data
+
+// --------- MODEL ---------
+//
+// Отрисовывает вид странички.
+// Можно сказать, что заворачивает в html данные переданные контроллером
+//
+// Функция возвращает таблицу html с данными
 function pageGaneral (data) {
 	var strTable="<table class='table1'>";
 		strTable+="<tr class='trTable'>";
@@ -12,7 +18,7 @@ function pageGaneral (data) {
     	strTable+="<td class='tdId'>"+(i+1)+". ";
     	strTable+="</td><td class='tdName'>"+data.person[i].name;
     	strTable+="</td><td class='tdFamily'>"+data.person[i].family;
-    	
+
     	strTable+="</td><tr>"
     }
     strTable+="</table>";

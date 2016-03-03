@@ -16,6 +16,6 @@ function pageDetail(id, data) {
 	    	strTable+="</td><td class='tdFamily'>"+data.person[i].age;
     	}
     }
-    strTable+="</td><tr></table>";
+    strTable+="</td><tr><tr><td colspan=3></td><td class='trTable' onclick=pageCtrl()>Go to back</td></tr></table>";
     return strTable;
 }
